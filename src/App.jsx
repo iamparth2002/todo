@@ -22,8 +22,8 @@ function App() {
       return;
     } else {
       setCollection((prev) => {
-        localStorage.setItem("tasks",JSON.stringify([...prev, { task, defaultChecked: false }]));
-        return [...prev, { task, defaultChecked: false }];
+        localStorage.setItem("tasks",JSON.stringify([...collection, { task, defaultChecked: false }]));
+        return [...collection, { task, defaultChecked: false }];
       });
     }
     setTask('');
