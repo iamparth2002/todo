@@ -52,9 +52,9 @@ function App() {
       </form>
       <div className="flex flex-col ">
         {collection?.length > 0 ? (
-          collection.map((item) => <Task {...item} removeTask={removeTask} />)
+          collection?.map((item) => <Task {...item} removeTask={removeTask} />)
         ) : (
-          <h1v className=" text-xl text-center mt-10 font-semibold">No Task Added</h1v>
+          <h1 className=" text-xl text-center mt-10 font-semibold">No Task Added</h1>
         )}
       </div>
     </div>
